@@ -150,8 +150,8 @@ renderer.toneMapping = THREE.CustomToneMapping;
 // Generates a standalone bullet-tip cap geometry, base ring at y=0, apex pointing in -y.
 // Matches the shape of generateCap(true) in BladeGeometry (same tipPower / tipScaleY).
 function makeTipCapGeometry(radius, radialSegments) {
-  const tipPower  = 1.2;
-  const tipScaleY = 2.20;
+  const tipPower  = 1.0;
+  const tipScaleY = 3.0;
   const segments  = Math.floor(radialSegments / 4);
 
   const verts = [], norms = [], uvArr = [], idxArr = [];
