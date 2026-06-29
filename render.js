@@ -678,7 +678,7 @@ createBgPlane();
         color:             0x000000,
         emissiveMap:       blade_texture,
         emissiveIntensity: 1.7,
-        emissive:          0xffffffff,
+        emissive:          0x000000,
         envMap:            envMap
       });
 
@@ -691,7 +691,7 @@ createBgPlane();
         color:             0x000000,
         emissiveMap:       blade_texture,
         emissiveIntensity: 1.7,
-        emissive:          0xffffffff,
+        emissive:          0x000000,
         envMap:            envMap
       });
       blade_tip = new THREE.Mesh(blade_tip_geometry, blade_tip_material);
