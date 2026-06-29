@@ -675,11 +675,10 @@ createBgPlane();
       blade_geometry.applyMatrix4(blade_translation);
 
       const blade_material = new THREE.MeshStandardMaterial({
-        color:             0x000000,
-        emissiveMap:       blade_texture,
-        emissiveIntensity: 0,
-        emissive:          0x000000,
-        envMap:            envMap
+  color: 0x000000,
+  emissive: 0x000000,
+  emissiveIntensity: 0,
+  envMapIntensity: 0
       });
 
       blade = new THREE.Mesh(blade_geometry, blade_material);
@@ -688,11 +687,10 @@ createBgPlane();
      // Tip cap — separate mesh so it never gets Y-scaled with the cylinder
       const blade_tip_geometry = makeTipCapGeometry(1.3, 64);
       const blade_tip_material = new THREE.MeshStandardMaterial({
-        color:             0x000000,
-        emissiveMap:       blade_texture,
-        emissiveIntensity: 0,
-        emissive:          0x000000,
-        envMap:            envMap
+  color: 0x000000,
+  emissive: 0x000000,
+  emissiveIntensity: 0,
+  envMapIntensity: 0
       });
       blade_tip = new THREE.Mesh(blade_tip_geometry, blade_tip_material);
       hilt.add(blade_tip);
