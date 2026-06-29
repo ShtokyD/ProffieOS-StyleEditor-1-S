@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+0import * as THREE from 'three';
 import {VRButton} from 'three/addons/webxr/VRButton.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import {RGBELoader} from "three/examples/jsm/loaders/RGBELoader";
@@ -677,7 +677,7 @@ createBgPlane();
       const blade_material = new THREE.MeshStandardMaterial({
         color:             0x000000,
         emissiveMap:       blade_texture,
-        emissiveIntensity: 1.7,
+        emissiveIntensity: 0,
         emissive:          0x000000,
         envMap:            envMap
       });
@@ -690,7 +690,7 @@ createBgPlane();
       const blade_tip_material = new THREE.MeshStandardMaterial({
         color:             0x000000,
         emissiveMap:       blade_texture,
-        emissiveIntensity: 1.7,
+        emissiveIntensity: 0,
         emissive:          0x000000,
         envMap:            envMap
       });
