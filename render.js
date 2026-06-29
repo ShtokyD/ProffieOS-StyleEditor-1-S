@@ -675,7 +675,7 @@ createBgPlane();
       blade_geometry.applyMatrix4(blade_translation);
 
       const blade_material = new THREE.MeshStandardMaterial({
-        color:             0xCCCCCC,
+        color:             0x000000,
         emissiveMap:       blade_texture,
         emissiveIntensity: 1.7,
         emissive:          0xffffffff,
@@ -688,7 +688,7 @@ createBgPlane();
      // Tip cap — separate mesh so it never gets Y-scaled with the cylinder
       const blade_tip_geometry = makeTipCapGeometry(1.3, 64);
       const blade_tip_material = new THREE.MeshStandardMaterial({
-        color:             0xCCCCCC,
+        color:             0x000000,
         emissiveMap:       blade_texture,
         emissiveIntensity: 1.7,
         emissive:          0xffffffff,
