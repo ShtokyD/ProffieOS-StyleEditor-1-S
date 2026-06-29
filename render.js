@@ -776,6 +776,8 @@ function actual_millis() {
 function animate() {
   if (!bladeTrailMeshesReady) return;
 
+  blade_aura.visible = false;
+
   // Ensure arrays exist
   window.bladeTrailTransforms = window.bladeTrailTransforms || [];
   bladeTrailMeshes            = bladeTrailMeshes            || [];
