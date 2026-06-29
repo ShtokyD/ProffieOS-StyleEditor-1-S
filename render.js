@@ -682,7 +682,7 @@ createBgPlane();
       hilt.add(blade);
 
      // Tip cap — separate mesh so it never gets Y-scaled with the cylinder
-      const blade_tip_geometry = makeTipCapGeometry(1.3, 64);
+      const blade_tip_geometry = makeTipCapGeometry(1.3, 120);
       const blade_tip_material = new THREE.MeshStandardMaterial({
   color: 0x000000
       });
